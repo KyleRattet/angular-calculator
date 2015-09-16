@@ -4,11 +4,11 @@ var app = angular.module('myApp', ['ngRoute']);
 app.config(function($routeProvider, $locationProvider) {
 
     $routeProvider
-      .when('/add/:number1/:number2', {
+      .when('/add/:x/:y', {
         templateUrl: 'partials/addition.html',
         controller: 'AdditionController'
       })
-      .when('/divide/:number1/:number2', {
+      .when('/divide/:x/:y', {
         templateUrl: 'partials/division.html',
         controller: 'DivisionController'
       })
